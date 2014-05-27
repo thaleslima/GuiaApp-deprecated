@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#e5e5e5</color>
+
+    <color name="bt_blue">#4c8ffb</color>
+    <color name="bt_blue_focus">#bac3da</color>
+
+    <color name="menu_title_row">#4f5561</color>
+
+
+    <color name="orange">#F58634</color>
+    <color name="gray">#A7C4D2</color>
+    <color name="green">#00A859</color>
+    <color name="red">#ed3237</color>
+    <color name="blue">#00AFEF</color>
+
+    <color name="action_bar">#4c8ffb</color>
+</resources>

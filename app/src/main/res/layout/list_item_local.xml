@@ -1,0 +1,39 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/list_border"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImage"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_vertical"
+        android:background="@color/orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/text_app"
+        android:id="@+id/tvLocalName"
+        android:textColor="@color/menu_title_row"
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/ivImage"
+        android:layout_toRightOf="@+id/ivImage"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_below="@+id/tvLocalName"
+        android:layout_alignLeft="@+id/tvLocalName"
+        android:layout_alignStart="@+id/tvLocalName"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+</RelativeLayout>

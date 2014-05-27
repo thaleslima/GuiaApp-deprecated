@@ -1,0 +1,499 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:scaleType="center"
+                android:src="@drawable/pousada"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pousada Rio Grande"
+                android:id="@+id/tvDetailLocalName"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Telefone"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="(35) 3525-1336"
+                    android:id="@+id/tvDetailTelephone"
+                    android:textColor="@color/menu_title_row"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Site"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="http://www.pousadariogrande.com.br/"
+                    android:id="@+id/tvDetailSite"
+                    android:textColor="@color/menu_title_row"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="E-mail"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="reservas@pousadariogrande.com.br"
+                    android:id="@+id/tvDetailEmail"
+                    android:textColor="@color/menu_title_row"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Descrição"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Fica localizada no centro da cidade, próxima a bares, bancos, restaurantes e dos demais centros de lazer.
+
+- São 22 apartamentos divididos nas categorias ESPECIAL, LUXO e STANDARD:
+- Apartamento Especial: TV, frigobar, ar condicionado, ventilador de teto,banheiro privativo, roupa de cama e banho;
+- Apartamento Luxo: TV, frigobar, ventilador de teto, banheiro privativo, roupa de cama e banho;
+- Apartamento Standard: TV, ventilador de teto, banheiro privativo, roupa de cama e banho;"
+                    android:id="@+id/tvDetailDecription"
+                    android:textColor="@color/menu_title_row"
+                    android:textSize="12dp"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Localização"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Rua Torquato José de Almeida, 790A"
+                    android:id="@+id/tvDetailLocation"
+                    android:textColor="@color/menu_title_row"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Avaliar"
+                    android:textColor="#bbbbbb"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbDetailRating"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbDetailRatingGeneral"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:layout_gravity="center_horizontal"
+                        style="?android:attr/ratingBarStyleSmall"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="30 Avaliações"
+                        android:id="@+id/tvDetailRating"
+                        android:textColor="#bbbbbb"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ivDetailImage01"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/orange"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Medium Text"
+                        android:id="@+id/ivDetailNameUser01"
+                        android:textColor="@color/menu_title_row"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignTop="@+id/ivDetailImage01"
+                        android:layout_toRightOf="@+id/ivDetailImage01"
+                        android:layout_marginLeft="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/ivDetailNameUser01"
+                        android:layout_alignLeft="@+id/ivDetailNameUser01"
+                        android:layout_alignStart="@+id/ivDetailNameUser01"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/llDetailComment01">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbDetailRating01"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:layout_gravity="center_horizontal"
+                            style="?android:attr/ratingBarStyleSmall"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="30/12/2012"
+                            android:id="@+id/tvDetailDateComment01"
+                            android:textColor="#bbbbbb"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Atende todas as minhas necessidades"
+                        android:id="@+id/tvDetailComment01"
+                        android:layout_below="@+id/llDetailComment01"
+                        android:layout_alignLeft="@+id/llDetailComment01"
+                        android:layout_alignStart="@+id/llDetailComment01"
+                        android:textColor="@color/menu_title_row"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ivDetailImage02"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/orange"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Medium Text"
+                        android:id="@+id/ivDetailNameUser02"
+                        android:textColor="@color/menu_title_row"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignTop="@+id/ivDetailImage02"
+                        android:layout_toRightOf="@+id/ivDetailImage02"
+                        android:layout_marginLeft="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/ivDetailNameUser02"
+                        android:layout_alignLeft="@+id/ivDetailNameUser02"
+                        android:layout_alignStart="@+id/ivDetailNameUser02"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/llDetailComment02">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbDetailRating02"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:layout_gravity="center_horizontal"
+                            style="?android:attr/ratingBarStyleSmall"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="30/12/2012"
+                            android:id="@+id/tvDetailDateComment02"
+                            android:textColor="#bbbbbb"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Atende todas as minhas necessidades"
+                        android:id="@+id/tvDetailComment01"
+                        android:layout_below="@+id/llDetailComment02"
+                        android:layout_alignLeft="@+id/llDetailComment02"
+                        android:layout_alignStart="@+id/llDetailComment02"
+                        android:textColor="@color/menu_title_row"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ivDetailImage03"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/orange"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Medium Text"
+                        android:id="@+id/ivDetailNameUser03"
+                        android:textColor="@color/menu_title_row"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignTop="@+id/ivDetailImage03"
+                        android:layout_toRightOf="@+id/ivDetailImage03"
+                        android:layout_marginLeft="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/ivDetailNameUser03"
+                        android:layout_alignLeft="@+id/ivDetailNameUser03"
+                        android:layout_alignStart="@+id/ivDetailNameUser03"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/llDetailComment03">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbDetailRating03"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:layout_gravity="center_horizontal"
+                            style="?android:attr/ratingBarStyleSmall"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="30/12/2012"
+                            android:id="@+id/tvDetailDateComment03"
+                            android:textColor="#bbbbbb"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Atende todas as minhas necessidades"
+                        android:id="@+id/tvDetailComment01"
+                        android:layout_below="@+id/llDetailComment03"
+                        android:layout_alignLeft="@+id/llDetailComment03"
+                        android:layout_alignStart="@+id/llDetailComment03"
+                        android:textColor="@color/menu_title_row"/>
+                </RelativeLayout>
+
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Mais comentários"
+                    android:id="@+id/btDetailMoreComments"
+                    android:background="@drawable/button_blue"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
